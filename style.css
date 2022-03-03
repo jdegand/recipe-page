@@ -1,0 +1,269 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+} 
+
+html {
+    font-family: "Poppins", sans-serif;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  padding: 10px;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+dt, 
+a {
+    color: #4B5363;
+}
+
+dl {
+  margin-inline-start: 5px;
+  font-size: 14px;
+}
+
+ol > li::before {
+    content: "";
+    background: orange;
+}
+
+label {
+  position: relative;
+}
+
+input[type='checkbox'] + label::before {
+  content: '';
+  position: relative;
+  display: inline-block;
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border: 1px solid;
+  cursor: pointer;
+}
+
+input[type='checkbox']:checked + label::before {
+  background: black;
+}
+
+input[type='checkbox']:checked + label::after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  border-left: 3px solid orange;
+  border-bottom: 3px solid orange;
+  height: 6px;
+  width: 13px;
+  transform: rotate(-45deg);
+}
+
+input[type='checkbox']:focus + label::before {
+  outline: 2px solid orange;
+  box-shadow: 0 0px 8px orange;
+}
+
+input[type='checkbox'] {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+ol {
+  counter-reset: my-awesome-counter;
+  list-style: none;
+}
+ol li {
+  counter-increment: my-awesome-counter;
+  position: relative;
+  margin-block-end: 10px;
+}
+ol li::before {
+  content: counter(my-awesome-counter);
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  position: absolute;
+  --size: 32px;
+  left: calc(-1 * var(--size) - 10px);
+  line-height: var(--size);
+  width: var(--size);
+  height: var(--size);
+  top: 0;
+  background: orange;
+  border-radius: 8px;
+  text-align: center;
+}
+
+footer {
+  margin-block: 100px 50px;
+}
+
+.chocolate-chip-loaf-cake-img {
+  border-radius: 10px;
+  margin: 10px auto 50px;
+}
+
+.orange {
+  color: #A36A00;
+}
+
+.subheader-wrapper {
+display: flex;
+align-items: flex-start;
+}
+
+.subheader-wrapper img {
+margin: 10px;
+}
+
+.subheader-wrapper p {
+max-width: 50ch;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "yields . . "
+                       "prep-time cook-time total-time"
+  ;
+  gap: 5px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.prep-time {
+  grid-area: prep-time;
+}
+
+.cook-time {
+  grid-area: cook-time;
+}
+
+.total-time {
+  grid-area: total-time;
+}
+
+
+@media (min-width: 1000px){
+
+  body {
+    padding: 50px 100px;
+  }
+
+  main {
+    position: relative;
+  }
+
+  dl {
+    margin-inline-start: 10px;
+    font-size: 16px;
+  }
+
+  ol li {
+    margin-block-end: 20px;
+  }
+
+  .grid {
+      grid-template-columns: 1fr;
+      grid-template-areas: "yields"
+                             "prep-time"
+                             "cook-time"
+                             "total-time";
+      box-shadow: 2px 2px 2px 4px #ddd;
+      width: 12vw;
+      padding: 20px;
+      text-align: left;
+      border-radius: 10px;
+      position: absolute;
+      top: 2%;
+      right: 10%;
+  }
+
+  .flex {
+      justify-content: initial;
+  }
+
+  .chocolate-chip-loaf-cake-img {
+    border-radius: 10px;
+    width: 70vw;
+    height: 70vh;
+    object-fit: cover;
+  }
+
+  .subheader-wrapper p {
+    max-width: 74ch;
+  }
+
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .grid {
+    width: 13vw;
+    padding: 3px;
+  }
+}
