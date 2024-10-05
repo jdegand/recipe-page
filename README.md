@@ -10,7 +10,7 @@
       Live Link
     </a>
     <span> | </span>
-    <a href="https://legacy.devchallenges.io/challenges/OEKdUZ6xs0h99C38XVht">
+    <a href="https://web.archive.org/web/20240526063718/https://legacy.devchallenges.io/challenges/OEKdUZ6xs0h99C38XVht">
       Challenge
     </a>
   </h3>
@@ -25,11 +25,11 @@
 
 ## Overview
 
-![](recipe-page-mobile.png)
+![Mobile](recipe-page-mobile.png)
 
-![](recipe-page-desktop-1.png)
+![Desktop 1](recipe-page-desktop-1.png)
 
-![](recipe-page-desktop-2.png)
+![Desktop 2](recipe-page-desktop-2.png)
 
 ### Built With
 
@@ -38,11 +38,13 @@
 
 ## Features
 
-This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://legacy.devchallenges.io/challenges/OEKdUZ6xs0h99C38XVht) was to build an application to complete the following user stories:
+This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://web.archive.org/web/20240526063718/https://legacy.devchallenges.io/challenges/OEKdUZ6xs0h99C38XVht) was to build an application to complete the following user stories:
 
 - [x] User story: I can see a recipe with ingredients and instructions
 - [x] User story: I can select a checkbox if I have the ingredients
 - [x] User story: I can see the number of servings, baking times
+
+**Note**: The previous design document may be incomplete, as you need to find an archived version of the challenge as all `legacy` challenges have had their documentation removed from DevChallenges.
 
 ## Useful Resources
 
@@ -54,4 +56,4 @@ This application/site was created as a submission to a [DevChallenges](https://d
 - [YouTube](https://www.youtube.com/watch?v=2Sf8E9CUavA) - custom checkbox
 - [Blog](https://www.a11ywithlindsey.com/blog/create-custom-keyboard-accesible-checkboxes) - custom checkboxes with ally
 - [Stack Overflow](https://stackoverflow.com/questions/55995977/is-there-any-good-effect-when-put-an-img-tag-in-a-p-tag-is-it-correct-at-all/55996018) - img tag inside a p tag
-- [CSS Tricks](https://css-tricks.com/css-counters-custom-list-number-styling/) - css counters custom list number styling
+- [CSS Tricks](https://css-tricks.com/css-counters-custom-list-number-styling/) - CSS counters custom list number styling

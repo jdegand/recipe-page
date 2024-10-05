@@ -2,10 +2,10 @@
 *::before,
 *::after {
   box-sizing: border-box;
-} 
+}
 
 html {
-    font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 body,
@@ -56,9 +56,9 @@ select {
 
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
-   scroll-behavior: auto;
+    scroll-behavior: auto;
   }
-  
+
   *,
   *::before,
   *::after {
@@ -69,9 +69,9 @@ select {
   }
 }
 
-dt, 
+dt,
 a {
-    color: #4B5363;
+  color: #4B5363;
 }
 
 dl {
@@ -79,16 +79,16 @@ dl {
   font-size: 14px;
 }
 
-ol > li::before {
-    content: "";
-    background: orange;
+ol>li::before {
+  content: "";
+  background: orange;
 }
 
 label {
   position: relative;
 }
 
-input[type='checkbox'] + label::before {
+input[type='checkbox']+label::before {
   content: '';
   position: relative;
   display: inline-block;
@@ -100,11 +100,11 @@ input[type='checkbox'] + label::before {
   cursor: pointer;
 }
 
-input[type='checkbox']:checked + label::before {
+input[type='checkbox']:checked+label::before {
   background: black;
 }
 
-input[type='checkbox']:checked + label::after {
+input[type='checkbox']:checked+label::after {
   content: '';
   position: absolute;
   top: 3px;
@@ -116,7 +116,7 @@ input[type='checkbox']:checked + label::after {
   transform: rotate(-45deg);
 }
 
-input[type='checkbox']:focus + label::before {
+input[type='checkbox']:focus+label::before {
   outline: 2px solid orange;
   box-shadow: 0 0px 8px orange;
 }
@@ -133,11 +133,13 @@ ol {
   counter-reset: my-awesome-counter;
   list-style: none;
 }
+
 ol li {
   counter-increment: my-awesome-counter;
   position: relative;
   margin-block-end: 10px;
 }
+
 ol li::before {
   content: counter(my-awesome-counter);
   color: #fff;
@@ -169,23 +171,23 @@ footer {
 }
 
 .subheader-wrapper {
-display: flex;
-align-items: flex-start;
+  display: flex;
+  align-items: flex-start;
 }
 
 .subheader-wrapper img {
-margin: 10px;
+  margin: 10px;
 }
 
 .subheader-wrapper p {
-max-width: 50ch;
+  max-width: 50ch;
 }
 
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas: "yields . . "
-                       "prep-time cook-time total-time"
+    "prep-time cook-time total-time"
   ;
   gap: 5px;
 }
@@ -209,7 +211,7 @@ max-width: 50ch;
 }
 
 
-@media (min-width: 1000px){
+@media (min-width: 1000px) {
 
   body {
     padding: 50px 100px;
@@ -229,23 +231,23 @@ max-width: 50ch;
   }
 
   .grid {
-      grid-template-columns: 1fr;
-      grid-template-areas: "yields"
-                             "prep-time"
-                             "cook-time"
-                             "total-time";
-      box-shadow: 2px 2px 2px 4px #ddd;
-      width: 12vw;
-      padding: 20px;
-      text-align: left;
-      border-radius: 10px;
-      position: absolute;
-      top: 2%;
-      right: 10%;
+    grid-template-columns: 1fr;
+    grid-template-areas: "yields"
+      "prep-time"
+      "cook-time"
+      "total-time";
+    box-shadow: 2px 2px 2px 4px #ddd;
+    width: 12vw;
+    padding: 20px;
+    text-align: left;
+    border-radius: 10px;
+    position: absolute;
+    top: 2%;
+    right: 10%;
   }
 
   .flex {
-      justify-content: initial;
+    justify-content: initial;
   }
 
   .chocolate-chip-loaf-cake-img {
